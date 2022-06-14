@@ -1,0 +1,7 @@
+<input type="text" #message placeholder="insert message to be added" />
+<input type="text" #interval placeholder="insert the interval" />
+<button (click)="setValues(interval.value, message.value)">Set Interval</button>
+<button (click)="stopAdding()">Stop Interval</button>
+<ul>
+  <li *ngFor="let message of messages">{{ message }}</li>
+</ul>
